@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Kevin's Kwiz!</title>
+<title>WRA410 Quiz - Hope you like HTML</title>
 <link href ="style.css" rel ="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <script src = "main.js"></script>
@@ -11,27 +11,95 @@
 
 
 <body>
-<h1>This is best quiz on the internet!</h1>
+<h1>WRA410 Quiz</h1>
 
 
 <form id = "quiz" name = "quiz">
 
 
-<p class = "questions">What is the capital of Rhode Island?</p>
-<input id = "textbox" type = "text" name = "question1">
+<p class = "questions">Which of the following was NOT covered this year? (Easy)</p>
+<!-- <input id = "textbox" type = "text" name = "question1"> -->
+<input type = "radio" id = "mc" name = "question1" value = "Javascript"> Javascript<br>
+<input type = "radio" id = "mc" name = "question1" value = "Ruby on Rails"> Ruby on Rails<br>
+<input type = "radio" id = "mc" name = "question1" value = "Python"> Python<br>
+<input type = "radio" id = "mc" name = "question1" value = "HTML"> HTML<br>
 
-<p class = "questions">What is the capital of Connecticut?</p>
-<input type = "radio" id = "mc" name = "question2" value = "Hartford"> Hartford<br>
-<input type = "radio" id = "mc" name = "question2" value = "Heartford"> Heartford<br>
+<p class = "questions">Which language is the following line of code from? (Easy)</p>
+<p>"console.log(output)"</p>
+<input type = "radio" id = "mc" name = "question2" value = "Javascript"> Javascript<br>
+<input type = "radio" id = "mc" name = "question2" value = "Rails"> Rails<br>
+<input type = "radio" id = "mc" name = "question2" value = "HTML"> HTML<br>
+<input type = "radio" id = "mc" name = "question2" value = "CSS"> CSS<br>
 
-<p class = "questions">What is the capital of New York?</p>
+<p class = "questions">In HTML what does the < br > tag do? (Easy)</p>
 
-<input type = "radio" id = "mc" name = "question3" value = "Albany"> Albany<br>
-<input type = "radio" id = "mc" name = "question3" value = "All Benny's"> All Benny's<br>
+<input type = "radio" id = "mc" name = "question3" value = "LineBreak"> Produces a Line Break<br>
+<input type = "radio" id = "mc" name = "question3" value = "EndPara's"> Ends a Paragraph<br>
+<input type = "radio" id = "mc" name = "question3" value = "StartsHeader"> Creates a Header<br>
+<input type = "radio" id = "mc" name = "question3" value = "NOTA"> None of the Above<br>
 
+<p class = "questions">Read the following line of Javascript Code.<br> Which of the following
+  would be displayed with "console.log(array[1])"? (Normal)</p>
+  <p>let array = ['hello', 'world', 'it's', 'ya', 'boi']</p>
+
+<input type = "radio" id = "mc" name = "question4" value = "World"> world<br>
+<input type = "radio" id = "mc" name = "question4" value = "Hello"> hello<br>
+<input type = "radio" id = "mc" name = "question4" value = "It's"> it's<br>
+<input type = "radio" id = "mc" name = "question4" value = "NOTA"> None of the Above<br>
+
+<p class = "questions">While using the Unix Terminal, which of the following commands
+  takes you to your home directory? (Normal)</p>
+
+<input type = "radio" id = "mc" name = "question5" value = "CD"> cd<br>
+<input type = "radio" id = "mc" name = "question5" value = "cd_."> cd .<br>
+<input type = "radio" id = "mc" name = "question5" value = "LS"> ls<br>
+<input type = "radio" id = "mc" name = "question5" value = "NOTA"> None of the Above<br>
+
+<p class = "questions">HTTPS is an acronym. What does the S stand for in HTTPS? (Normal)</p>
+
+<input type = "radio" id = "mc" name = "question6" value = "Server">Server <br>
+<input type = "radio" id = "mc" name = "question6" value = "Seperate.">Seperated<br>
+<input type = "radio" id = "mc" name = "question6" value = "Secure">Secure <br>
+<input type = "radio" id = "mc" name = "question6" value = "NOTA"> None of the Above<br>
+
+<p class = "questions">In your unix terminal, which command would generate a new
+  folder called 'photos'? (Normal)</p>
+
+<input type = "radio" id = "mc" name = "question7" value = "Correct">mkdir photos <br>
+<input type = "radio" id = "mc" name = "question7" value = "Wrong.">cd photos<br>
+<input type = "radio" id = "mc" name = "question7" value = "Wrong">git init photos <br>
+<input type = "radio" id = "mc" name = "question7" value = "NOTA"> None of the Above<br>
+
+<p class = "questions">How would you check a website you were developing
+  with Ruby on Rails (i.e. look at how it would look)? (Normal)</p>
+
+<input type = "radio" id = "mc" name = "question8" value = "Wrong">Open the routes.rb file <br>
+<input type = "radio" id = "mc" name = "question8" value = "Correct.">Opening localhost:3000 after
+activating a rails server<br>
+<input type = "radio" id = "mc" name = "question8" value = "Wrong">You cannot check your website
+in development.<br>
+<input type = "radio" id = "mc" name = "question8" value = "NOTA"> None of the Above<br>
+
+<p class = "questions">How should you resolve the following error with git? (Hard)</p>
+<p>error: failed to push some refs to 'https://github.com/USERNAME/REPOSITORY.git'</p>
+
+<input type = "radio" id = "mc" name = "question9" value = "Wrong">By attempting a pull from github
+and commiting from there. <br>
+<input type = "radio" id = "mc" name = "question9" value = "Wrong.">By restarting git in the
+project with a git init.<br>
+<input type = "radio" id = "mc" name = "question9" value = "Correct"> By fetching and merging
+the changes made on the remote branch with the changes that you have made locally.<br>
+<input type = "radio" id = "mc" name = "question9" value = "NOTA"> None of the Above<br>
+
+<p class = "questions">What of the following is not generated with the following command? (Hard)</p>
+<p>rails g scaffold example ex1:string ex2:integer</p>
+
+<input type = "radio" id = "mc" name = "question10" value = "Wrong">views<br>
+<input type = "radio" id = "mc" name = "question10" value = "Wrong.">models<br>
+<input type = "radio" id = "mc" name = "question10" value = "Wrong">controllers<br>
+<input type = "radio" id = "mc" name = "question10" value = "Correct"> All of the Above are generated<br>
 
 <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
-
 
 </form>
 
@@ -43,6 +111,3 @@
 </html>
 
 </body>
-
-
-
