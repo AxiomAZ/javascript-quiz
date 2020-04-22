@@ -53,7 +53,7 @@ function check(){
 		score = 2;
 	}
 
-	if (correct > 5 && correct =< 9) {
+	if (correct > 5 && correct < 10) {
 		score = 1;
 	}
 
