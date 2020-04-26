@@ -46,18 +46,18 @@ function check(){
 		correct++;
 	}
 	var pictures = ["img/win.gif", "img/meh.jpeg", "img/lose.gif"];
-	var messages = ["Great job!", "That's just okay", "You really need to do better"];
+	var messages = ["Nice. You really got this down.", "Not bad, You at least passed", "Might What to brush up a bit"];
 	var score;
 
 	if (correct <= 5) {
 		score = 2;
 	}
 
-	if (correct > 5 && correct < 10) {
+	if (correct > 5 && correct < 9) {
 		score = 1;
 	}
 
-	if (correct == 10) {
+	if (correct == 9 || correct == 10) {
 		score = 0;
 	}
 
